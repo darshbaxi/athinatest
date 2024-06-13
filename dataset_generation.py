@@ -271,7 +271,8 @@ if uploaded_file is not None:
     verdict_results=[]
     if st.button('Generate testcase'):
         for result in results:
-            context_llm,generated_answer=Reply(result['query'])
+            generated_answer,context_llm=Reply(result['query'])
+            print(generated_answer)
             score=faithfulness(result['context'],generated_answer,result['query'])
             print(score)
             verdict_results.append({"context": result['context'], "query": result['query'], "groundtruth": result['groundtruth'],"llm_answer":generated_answer,"Faithfulness":score})

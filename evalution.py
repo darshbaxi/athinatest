@@ -21,7 +21,7 @@ def statement_generation(question, answer, sentences):
         "instruction": "Given a question, an answer, and sentences from the answer analyze the complexity of each sentence given under 'sentences' and break down each sentence into one or more fully understandable statements while also ensuring no pronouns are used in each statement. Format the outputs in JSON.",
         "examples": [
             {{
-                ""question": "Who was Albert Einstein and what is he best known for?",
+                "question": "Who was Albert Einstein and what is he best known for?",
                 "answer": "He was a German-born theoretical physicist, widely acknowledged to be one of the greatest and most influential physicists of all time. He was best known for developing the theory of relativity, he also made important contributions to the development of the theory of quantum mechanics.",
                 "sentences": """
                             0:He was a German-born theoretical physicist, widely acknowledged to be one of the greatest and most influential physicists of all time. 
