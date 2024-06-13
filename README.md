@@ -1,4 +1,27 @@
-# athinatest
+# Athinatest
+## Configuration & Installation
+To get started with project, ensure you have the following dependencies and tools installed:
+1. Set up virtual environment using following command :
+   ```
+   python -m venv <virtual-environment-name>
+
+   <virtual-environment-name>\Scripts\activate
+
+   ```
+
+2. Install other necessary dependencies using following command:
+   ```
+   pip install -r requirements.txt
+
+   ```
+3. Run the app using following command:
+   ```
+   streamlit run app.py
+
+   ```
+
+   
+
 
 ## Document link:-https://drive.google.com/file/d/1-opz0fejrwPiBZmYZPcDpidcSIPHOuQk/view?usp=sharing
 ## Rag work flow diagram:-
