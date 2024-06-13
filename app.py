@@ -1,7 +1,7 @@
 import streamlit as st
 import random
 import pandas as pd
-from langchain_helper import PDFChatbot
+from langchain_helper import PDFChatbot 
 from dataset_generation import PDFQA
 from evalution import faithfulness
 
@@ -44,8 +44,8 @@ class PDFApp:
         uploaded_file = st.file_uploader("Upload a PDF file", type="pdf")
 
         if uploaded_file is not None:
-            text = self.pdf_qa.get_pdf_text([uploaded_file])
-            chunks = self.pdf_qa.get_text_chunks(text)
+            text = self.pdf_chatbot.get_pdf_text([uploaded_file])
+            chunks = self.pdf_chatbot.get_text_chunks(text)
             
             n = st.slider("Select number of random chunks", min_value=1, max_value=len(chunks))
             selected_chunks = random.sample(chunks, n)
